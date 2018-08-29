@@ -1,0 +1,240 @@
+body{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+      ),    url('../img/citis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+header{
+    position: relative;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center
+}
+.logo img{
+    position: absolute;
+    top: 16px;
+    width: 115px;
+}
+
+.WebsiteName{
+    width: fit-content;
+}
+.WebsiteName h1{
+    margin: 15px auto 8px auto;
+    color: #fff;
+    padding:15px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 3rem;
+    text-shadow: 0px 0px 15px rgba(23, 162, 184, 1)!important;
+    background: rgba(255, 255, 255, 0.01);
+}
+.main-content{
+    margin-top: 40px;
+}
+.main-content .container{
+    padding: 120px 10px;
+    text-align: center;
+    background: rgba(23, 162, 184, 0.8);
+    color: #fff;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color:#fff;
+    
+}
+ul.navbar-nav li{
+    position: relative;
+    padding-left: 10px; 
+}
+.nav-link:hover{
+    color: #ccc;
+}
+ul li:not(:last-child):after
+{
+  content: '|';
+  position: absolute;
+  top: 7px;
+  left: 100%;
+
+}
+.main-content h1{
+    font-size: 2rem;
+}
+.start-btn {
+    font-size: 2rem;
+    padding: 5px 30px;
+    color: #fff !important;
+}
+@media (max-width:768px){
+
+        .logo img{
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 10px;;
+        width: 80px;
+        height: auto;
+    }
+    
+
+    .WebsiteName h1{
+        font-size: 2.5rem;
+    }
+    .main-content h1{
+        font-size: 1.7rem;
+    }
+    .main-content p{
+        font-size: 1.2rem;
+    }
+    .main-content h3 p{
+        font-size: 1rem;
+    }
+    .WebsiteName h1{
+        padding: 10px;
+        margin: 15px auto;
+    }
+    .main-content h3{
+    font-size: 1rem;
+    }
+}
+
+
+@media (max-width:576px){
+    ul li:not(:last-child):after{
+        content: ' | ';
+        position: absolute;
+        top: 7px;
+        left: 100%;
+    
+        }
+    .WebsiteName h1{
+        font-size: 2.5rem;
+    }
+    .main-content h1{
+        font-size: 1.5rem;
+    }
+    .main-content p{
+        font-size: 1rem;
+    }
+    .main-content h3 p{
+        font-size: .70rem;
+    }
+}
+@media (max-width: 576px) {
+    .navbar-expand-sm {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: unset;
+        flex-direction: unset;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}
+@media (max-width: 430px) {
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: .2rem;
+        padding-left: .2rem;
+    }
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    ul li:not(:last-child):after{
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 100%;
+
+    }
+}
+.formcard .card{
+    min-height: 646px;
+}
+#content-area .card-footer{
+    font-size: 1.2rem;
+    color: rgba(23, 162, 184,.7);
+    font-weight: 700;
+}
+#content-area .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+}
+.card-body{
+    padding: 10px 0px!important;
+}
+.card-body form{
+    padding: 10px!important;
+}
+.card-body form label{
+    font-size: 1.3rem;
+}
+.card-footer{
+    padding: 5px 10px!important;
+    padding-bottom: 0px!important;
+}
+.card-footer p{
+    margin-bottom: 5px;
+}
+.bg-info{
+   background: rgba(23, 162, 184,.9) !important;
+}
+#mainfooter .fcontent{
+    background: rgba(23, 162, 184,.9) !important;
+    color: #fff;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 2px;
+    font-size: 1.3rem;
+}
+@media (max-width: 1200px) {
+    .formcard .card {
+        min-height: 590px;
+    }
+}
+@media (max-width: 991px) {
+    .formcard .card {
+        min-height: 505px;
+    }
+    .mb-5, .my-5 {
+        margin-bottom: 0rem!important;
+    }
+    .card-body form label {
+        font-size: 1rem;
+    }
+    .card-body form {
+        padding: 3px!important;
+    }
+    #mainfooter .fcontent {
+        font-size: 1rem;
+    }
+    .WebsiteName h1 {
+        font-size: 2rem;
+    }
+}
