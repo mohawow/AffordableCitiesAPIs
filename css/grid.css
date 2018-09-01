@@ -1,0 +1,100 @@
+@media (max-width:768px){
+
+        .logo img{
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 10px;;
+        width: 80px;
+        height: auto;
+    }
+
+    .WebsiteName h1{
+        font-size: 2.5rem;
+    }
+    .main-content h1{
+        font-size: 1.7rem;
+    }
+    .main-content p{
+        font-size: 1.2rem;
+    }
+    .main-content h3 p{
+        font-size: 1rem;
+    }
+    .WebsiteName h1{
+        padding: 10px;
+        margin: 15px auto;
+    }
+    .main-content h3{
+    font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-expand-sm {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: unset;
+        flex-direction: unset;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+}
+@media (max-width: 430px) {
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: .2rem;
+        padding-left: .2rem;
+    }
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    ul li:not(:last-child):after{
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 100%;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .formcard .card {
+        min-height: 590px;
+    }
+}
+@media (max-width: 991px) {
+    .formcard .card {
+        min-height: 505px;
+    }
+    .mb-5, .my-5 {
+        margin-bottom: 0rem!important;
+    }
+    .card-body form label {
+        font-size: 1rem;
+    }
+    .card-body form {
+        padding: 3px!important;
+    }
+    #mainfooter .fcontent {
+        font-size: 1rem;
+    }
+    .WebsiteName h1 {
+        font-size: 2rem;
+    }
+}
