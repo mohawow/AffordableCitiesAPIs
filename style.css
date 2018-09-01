@@ -2,7 +2,7 @@ body{
     background: linear-gradient(
         rgba(0, 0, 0, 0.45),
         rgba(0, 0, 0, 0.45)
-      ),    url('../img/citis.jpg');
+      ),    url('citis.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -19,8 +19,8 @@ header{
 }
 .logo img{
     position: absolute;
-    top: 16px;
-    width: 115px;
+    top: 32px;
+    width: 235px;
 }
 
 .WebsiteName{
@@ -49,11 +49,11 @@ header{
 .nav-link{
     text-decoration: none;
     color:#fff;
-    
+
 }
 ul.navbar-nav li{
     position: relative;
-    padding-left: 10px; 
+    padding-left: 10px;
 }
 .nav-link:hover{
     color: #ccc;
@@ -83,7 +83,7 @@ ul li:not(:last-child):after
         width: 80px;
         height: auto;
     }
-    
+
 
     .WebsiteName h1{
         font-size: 2.5rem;
@@ -113,7 +113,7 @@ ul li:not(:last-child):after
         position: absolute;
         top: 7px;
         left: 100%;
-    
+
         }
     .WebsiteName h1{
         font-size: 2.5rem;
@@ -244,7 +244,4 @@ ul li:not(:last-child):after
     min-height: 300px;
     padding: 5px 20px;
     margin: 10px auto;
-}
-canvas{
-
 }

@@ -11,8 +11,8 @@ $(".submitbutton").on('click',function(e) {
     var data1set=new Array(),data2set=new Array(),datamonth=new Array(),totalcost1=0,totalcost2=0,cityname1='',cityname2='',median1=0,median2=0;
     data1set=[0];
     data2set=[0];
-    var city1=$('#inputCity1').val();
-    var city2=$('#inputCity2').val();
+    const city1=$('#inputCity1').val();
+    const city2=$('#inputCity2').val();
     var request = new XMLHttpRequest();
     request.open('GET', QUANDL_API_URL+'C'+city1+'_ZRISFRR?api_key=hzmgKTSmvyCcncCbDGtd', false);
     request.onload = function () {
@@ -29,8 +29,8 @@ $(".submitbutton").on('click',function(e) {
         });
         median1=Math.round(totalcost1/(parseInt(data1set.length)-1));
         console.log(data1set);
-        //console.log(jQuery.parseJSON(this.response).dataset.data);
     };
+
     request.send();
     var request = new XMLHttpRequest();
     request.open('GET', QUANDL_API_URL+'C'+city2+'_ZRISFRR?api_key=hzmgKTSmvyCcncCbDGtd', false);
@@ -39,17 +39,13 @@ $(".submitbutton").on('click',function(e) {
         cityname2=jQuery.parseJSON(this.response).dataset.name.toString().split('-')[3];
         $.each(data2, function( index, value ) {
             var $date2=value.toString().split(',')[0];
-            //console.log( index + ": " + $date1.toString().split('-')[0] );
             if ($date2.toString().split('-')[0]==2018){
-                //datamonth.push(monthNumToName($date2.toString().split('-')[1]));
                 data2set.push(value.toString().split(',')[1]);
                 totalcost2=totalcost2+parseInt(value.toString().split(',')[1]);
             }
         });
         median2=Math.round(totalcost2/(parseInt(data2set.length)-1));
         console.log(totalcost2);
-
-        //console.log(cityname1,cityname2,median1,median2);
     };
     request.send();
     console.log(cityname1,cityname2,median1,median2);
@@ -68,7 +64,6 @@ $(".submitbutton").on('click',function(e) {
         }]
     };
 
-    // Code from chart.js documentation
     var ctx = document.getElementById('chart').getContext('2d');
     var myBar = new Chart(ctx, {
         type: 'bar',
@@ -101,7 +96,6 @@ $(".submitbutton").on('click',function(e) {
             }
         }
     });
-// Git prices to show on homeprice
     $('#homeprice').html(cityname1+':'+' $'+median1+'<br>'+cityname2+':'+' $'+median2);
     myBar.update();
     e.preventDefault();
