@@ -11,17 +11,16 @@ $(".submitbutton").on('click',function(e) {
     var data1set=new Array(),data2set=new Array(),datamonth=new Array(),totalcost1=0,totalcost2=0,cityname1='',cityname2='',median1=0,median2=0;
     data1set=[0];
     data2set=[0];
-    var state1=$('#inputState1').val();
-    var state2=$('#inputState2').val();
-    console.log(state1);
+    var city1=$('#inputCity1').val();
+    var city2=$('#inputCity2').val();
     var request = new XMLHttpRequest();
-    request.open('GET', QUANDL_API_URL+'S'+state1+'_ZRISFRR?api_key=hzmgKTSmvyCcncCbDGtd', false);
+    request.open('GET', QUANDL_API_URL+'C'+city1+'_ZRISFRR?api_key=hzmgKTSmvyCcncCbDGtd', false);
     request.onload = function () {
         cityname1=jQuery.parseJSON(this.response).dataset.name.toString().split('-')[3];
         var data1 = jQuery.parseJSON(this.response).dataset.data;
         $.each(data1, function( index, value ) {
             var $date1=value.toString().split(',')[0];
-            //console.log( index + ": " + $date1.toString().split('-')[0] );
+
             if ($date1.toString().split('-')[0]==2018){
                 datamonth.push(monthNumToName($date1.toString().split('-')[1]));
                 data1set.push(value.toString().split(',')[1]);
@@ -34,7 +33,7 @@ $(".submitbutton").on('click',function(e) {
     };
     request.send();
     var request = new XMLHttpRequest();
-    request.open('GET', QUANDL_API_URL+'S'+state2+'_ZRISFRR?api_key=hzmgKTSmvyCcncCbDGtd', false);
+    request.open('GET', QUANDL_API_URL+'C'+city2+'_ZRISFRR?api_key=hzmgKTSmvyCcncCbDGtd', false);
     request.onload = function () {
         var data2 = jQuery.parseJSON(this.response).dataset.data;
         cityname2=jQuery.parseJSON(this.response).dataset.name.toString().split('-')[3];

@@ -1,3 +1,5 @@
 https://s3.amazonaws.com/quandl-production-static/zillow/areas_state.txt
 https://www.quandl.com/data/ZILLOW-Zillow-Real-Estate-Research/documentation/data-organization
 https://www.quandl.com/api/v3/datasets/ZILLOW/S3_ZRISFRR?api_key=hzmgKTSmvyCcncCbDGtd
+
+Looking 
