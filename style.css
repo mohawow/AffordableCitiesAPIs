@@ -1,3 +1,4 @@
+
 body{
     background: linear-gradient(
         rgba(0, 0, 0, 0.45),
@@ -238,10 +239,45 @@ ul li:not(:last-child):after
         font-size: 2rem;
     }
 }
-.canvas{
-    background: #fff;
-    width: 800px;
-    min-height: 300px;
-    padding: 5px 20px;
-    margin: 10px auto;
+.canvasPort{
+    margin: 30px auto;
+}
+.chosen-container {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 18px;
+    user-select: none;
+    width: 100% !important;
+}
+.chosen-container-single .chosen-single span {
+    display: block;
+    overflow: hidden;
+    margin-right: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 7px;
+}
+.chosen-container-single .chosen-single div {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    display: block;
+    width: 18px;
+    height: 100%;
+}
+.chosen-container-single .chosen-single {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #454545 !important;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 24px;
 }
