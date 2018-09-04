@@ -36,62 +36,76 @@
    <section id="content-area">
       <div class="container">
          <div class="row ">
-            <div class="col-md-3 col-lg-3 mt-5 mb-4 formcard">
+            <div class="col-md-12 col-lg-12 mt-5 mb-4 formcard">
                <div class="card bg-info text-white ">
                   <div class="card-body">
-                     <form action="" class="formstate">
-                        <div class="form-group mb-5">
+                     <form action="" class="formstate form-inline">
+                        <div class="col-md-6">
+                        <div class="form-group">
                            <label for="inputState1"  class="text-center">Enter your city</label>
-                           <select name="stat1" id="inputCity1" class="form-control cselect" data-show-subtext="true" data-live-search="true">
+                           <select name="stat1" id="inputState1" class="form-control cselect" data-show-subtext="true" data-live-search="true">
                               <option value="#">Select City One</option>
                            </select>
                         </div>
-                        <div class="form-group mb-5">
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
                            <label for="inputState2"  class="text-center">Enter another city </label>
-                           <select name="stat2" id="inputCity2" class="form-control cselect">
+                           <select name="stat2" id="inputState2" class="form-control cselect">
                               <option value="#">Select City Two</option>
                            </select>
                         </div>
+                        </div>
+                        <div class="col-md-12">
                         <button value="Compare" class="btn btn-outline-light btn-lg btn-block mb-5 mt-5 submitbutton">Compare</button>
-                        <div class="form-group mb-5">
-                           <label class="text-center">Premium version coming soon!</label>
-                           </select>
                         </div>
                      </form>
                   </div>
                </div>
             </div>
-            <div class="col-md-9 col-lg-9 mt-5">
+         </div>
+            <div class="row ">
+            <div class="col-md-12 col-lg-12 mt-5">
                <div class="container">
                   <div class="row ">
                      <div class="col-md-6  mb-6">
-                        <div class="card text-center">
+                        <div class="card text-center spCard">
                            <div class="card-body">
                               <h5 class="card-title">Necessities</h5>
                            </div>
                            <a href="#">
-                              <img class="card-img-bottom" src="img/Cost-of-Living.jpg" alt="Card image cap">
+                              <img class="card-img-bottom img img-responsive" src="img/Cost-of-Living.jpg" alt="Card image cap">
                            </a>
                            <div class="card-footer ">
-                              <p>$3,600 per <br> month</p>
+                              <p id="costofliving">$3,600 per <br> month</p>
                            </div>
                         </div>
                      </div>
                      <div class="col-md-6  mb-6">
-                        <div class="card text-center">
+                        <div class="card text-center spCard">
                            <div class="card-body">
                               <h5 class="card-title">Home Prices</h5>
                            </div>
                            <a href="#">
-                              <img class="card-img-bottom" src="img/home.jpg" alt="Card image cap">
-                              <div class="card-footer ">
+                              <img class="card-img-bottom img img-responsive" src="img/home.jpg" alt="Card image cap">
+
                            </a>
+                           <div class="card-footer ">
                            <p id="homeprice">$841,600 <br> Median</p>
                         </div>
                      </div>
                   </div>
                   <br>
-                  <div class="col-md-12  mb-12 canvasPort">
+                  <div class="col-md-6 canvasPort">
+                     <div class="card text-center">
+                        <div class="card-body ">
+                           <canvas id="chart2"></canvas>
+                        </div>
+                     </div>
+                     <br>
+                  </div>
+                  <br>
+                  <div class="col-md-6 canvasPort">
                      <div class="card text-center">
                         <div class="card-body">
                            <canvas id="chart"></canvas>
@@ -99,9 +113,11 @@
                      </div>
                      <br>
                   </div>
+
                </div>
             </div>
          </div>
+            </div>
       </div>
    </section>
    <!-- alert section -->

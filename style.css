@@ -1,4 +1,3 @@
-
 body{
     background: linear-gradient(
         rgba(0, 0, 0, 0.45),
@@ -11,6 +10,10 @@ body{
 }
 header{
     position: relative;
+}
+.submitbutton{
+    width: 165px;
+    margin: 0 auto;
 }
 .logo{
     display: flex;
@@ -173,7 +176,13 @@ ul li:not(:last-child):after
     }
 }
 .formcard .card{
-    min-height: 646px;
+    min-height: unset;
+}
+.canvasPort .card-body{
+    min-height: 500px !important;
+}
+.select2-container {
+    width: 100% !important;
 }
 #content-area .card-footer{
     font-size: 1.2rem;
@@ -216,12 +225,12 @@ ul li:not(:last-child):after
 }
 @media (max-width: 1200px) {
     .formcard .card {
-        min-height: 590px;
+        min-height: unset;
     }
 }
 @media (max-width: 991px) {
     .formcard .card {
-        min-height: 505px;
+        min-height: unset;
     }
     .mb-5, .my-5 {
         margin-bottom: 0rem!important;
